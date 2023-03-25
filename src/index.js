@@ -48,12 +48,12 @@ function cleanMarkup(ref) {
 function renderMarkup(countriesArr) {
   if (countriesArr.length === 1) {
     cleanMarkup(refs.list);
-    markupCountry = renderCountryCard(countriesArr);
+    const markupCountry = renderCountryCard(countriesArr);
     // console.log(markupCountry);
     refs.div.innerHTML = markupCountry;
   } else {
     cleanMarkup(refs.div);
-    markupCountryList = renderCountriesList(countriesArr);
+    const markupCountryList = renderCountriesList(countriesArr);
     // console.log(markupCountryList);
     refs.list.innerHTML = markupCountryList;
   }
